@@ -1,0 +1,20 @@
+﻿@using DynamicSections
+@{
+    ViewData["Title"] = "Tag helpers demo";
+}
+<h1>Hello from a MVC View!</h1>
+
+<register-block>
+    <script>
+        console.log("Inline block registered using <register-block> tag helper");
+    </script>
+</register-block>
+
+
+<h2>Two instances of MyViewComponent:</h2>
+<vc:my-view-component></vc:my-view-component>
+<vc:my-view-component></vc:my-view-component>
+
+<h2>Two instances of _MyPartialView:</h2>
+@Html.Partial("_MyPartialView", "Hello, world")
+@Html.Partial("_MyPartialView", "How are u doing?")

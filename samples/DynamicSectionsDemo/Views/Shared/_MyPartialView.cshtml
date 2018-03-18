@@ -1,0 +1,23 @@
+﻿@using DynamicSections
+@{
+    var id = "c" + DateTime.Now.Ticks;
+}
+
+<div id="@id" style="border: 1px solid #666; padding: 10px; margin: 10px; background-color: #fafafa">
+    <h3>MyPartialView Id=@id</h3>
+    <p>This content is generated from /Views/Shared/_MyPartialView.cshtml</p>
+</div>
+
+<register-block dynamic-section="scripts" key="my-partial-view-common">
+    <!-- Common initialization code for MyPartialView (generated only once) -->
+    <script>
+        console.log("Initialization code for MyPartialView");
+    </script>
+</register-block>
+
+<register-block dynamic-section="scripts" key="my-partial-view-@id">
+    <!-- Initialization code for MyPartialView @id  -->
+    <script>
+        console.log("Initialization code for instance '@id'");
+    </script>
+</register-block>
