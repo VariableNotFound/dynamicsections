@@ -23,7 +23,6 @@ namespace DynamicSections
         /// </summary>
         public bool Remove { get; set; }
 
-
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             output.SuppressOutput();

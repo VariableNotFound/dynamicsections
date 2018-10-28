@@ -74,6 +74,8 @@ This behavior is by design, to avoid rendering the same section more than once. 
 ```
 Or, using the HTML helper alternative:
 ```html
+@using DynamicSections
+...
 @Html.DynamicSection("*", remove: false)
 ```
 
@@ -89,6 +91,8 @@ You can do it using the helper `@Html.DynamicSection()` as follows:
 ### 4. Can I register blocks from a controller? Or from a filter?
 First, don't do it: these kind of components belongs to the Controller layer and should not register frontend code. But if you had to do it, you could use the `HttpContext` extension method like in the following MVC action:
 ```cs
+@using DynamicSections
+
 public IActionResult Index()
 {
     HttpContext.RegisterBlock("scripts", "home-index", "<!-- Hello from the controller! -->");
