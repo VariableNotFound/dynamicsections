@@ -16,5 +16,5 @@
 <vc:my-view-component></vc:my-view-component>
 
 <h2>Two instances of _MyPartialView:</h2>
-@Html.Partial("_MyPartialView", "Hello, world")
-@Html.Partial("_MyPartialView", "How are u doing?")
+@await Html.PartialAsync("_MyPartialView", "Hello, world")
+@await Html.PartialAsync("_MyPartialView", "How are u doing?")

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,7 +9,7 @@
     <Description>Register markup sections from Razor views, partial views, HTML helpers or any reusable view component and render them in the layout</Description>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
     <Copyright>Copyright © José M. Aguilar</Copyright>
     <PackageTags>razor, taghelpers, helpers, mvc</PackageTags>
     <PackageLicenseUrl>https://github.com/VariableNotFound/dynamicsections/blob/master/LICENSE</PackageLicenseUrl>
