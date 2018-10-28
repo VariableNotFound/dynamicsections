@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>José M. Aguilar</Authors>
     <Company>Variable not found</Company>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>Updated to ASP.NET Core 2.1</PackageReleaseNotes>
     <Description>Register markup sections from Razor views, partial views, HTML helpers or any reusable view component and render them in the layout</Description>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
