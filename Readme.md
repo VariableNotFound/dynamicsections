@@ -20,7 +20,7 @@ Also, if you plan to use _tag helpers_ (very recommended!), you must include the
 
 You can register code blocks from virtually any location of your application (views, partial views, Razor pages, view components, helpers, tag helpers... and even, although it is not recommended, from controllers, filters, or other server components).
 
-From a Razor view or page you can register a code block in the dynamic section called using the following tag helper:
+From a Razor view or page you can register a code block in the dynamic section called "scripts" using the following tag helper:
 ```html
 <register-block dynamic-section="scripts" key="test">
     <script>
